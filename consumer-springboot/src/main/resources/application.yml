@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1 #主机ip
+    port: 5672 #端口
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 5
+        max-concurrency: 10
+server:
+  port: 8080
